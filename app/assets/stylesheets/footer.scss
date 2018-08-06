@@ -1,0 +1,108 @@
+@import "variables";
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.site-footer {
+    background-color: $footerbg;
+    border-top: 1px solid $gray1;
+    padding: 1rem 3rem;
+    font-size: .8rem;
+    color: $gray2;
+    height: 70px;
+
+    .contact {
+        margin-right: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: .7rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .lang {
+        text-transform: uppercase;
+        color: inherit;
+        font-weight: bold;
+
+        &.is-active {
+            border-bottom: 1px solid $gray2;
+        }
+    }
+
+    .columns {
+        margin: 0;
+
+        .column {
+            padding: 0;
+        }
+    }
+
+    .column-right {
+        position: relative;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        height: initial;
+        position: relative;
+
+        .contact,
+        .siret {
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
+        .column-right {
+            .content {
+                position: relative;
+                right: initial;
+                top: initial;
+                transform: initial;
+                text-align: center;
+                font-size: 1.15rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+//
+// .is-comment-modal {
+//     .modal-card-body {
+//         border-bottom-left-radius: 5px;
+//         border-bottom-right-radius: 5px;
+//
+//         p {
+//             margin-bottom: 1rem;
+//         }
+//
+//         .is-twitter-share {
+//             display: block;
+//             margin: auto;
+//             margin-top: 1rem;
+//
+//             a {
+//                 display: inline-block;
+//             }
+//         }
+//     }
+// }

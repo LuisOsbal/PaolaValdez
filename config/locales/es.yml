@@ -1,14 +1,13 @@
-en:
+es:
   author_name: "Luis Osnet"
   owner_name: "Paola Valdez"
   job: "Marketing"
   main_description: "Mi nombre es Paola Valdez"
   description: "Soy una sexy mercadologa así como lo decia mi perfil de tinder"
-  hello: "Hi!"
-  # navbar
-  menu:
-    home: "Home"
-    about: "About"
-    projects: "Projects"
-    articles: "Blog"
-    contact: "Contact"
+  hello: "Hola!"
+  # menu
+  home: "Inicio"
+  about: "Sobre mi"
+  projects: "Proyectos"
+  articles: "Blog"
+  contact: "Contacto"
