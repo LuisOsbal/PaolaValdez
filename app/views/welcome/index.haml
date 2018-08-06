@@ -1,9 +1,6 @@
 .home-columns.columns
   .column.is-half.is-home-left-column
-    .logo
-      %svg{:height => "200", :style => "fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;", :version => "1.1", :viewbox => "0 0 71 50", :width => "250", "xml:space" => "preserve", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
-        %path{:d => "M24.708,49.446l-24.708,-24.708l2.748,-2.747l21.99,-21.991l5.482,0l10.999,10.999l-16.488,16.487l-2.748,-2.748l13.74,-13.739l-8.244,-8.244l-21.983,21.983l24.707,24.708l-5.495,0Zm15.732,0l-10.968,-10.968l16.487,-16.487l2.748,2.747l-13.739,13.74l8.243,8.244l21.984,-21.984l-24.732,-24.731l0.007,-0.007l5.482,0l24.739,24.738l-24.708,24.708l-5.543,0Z"}
-    %p Primative
+    %p Paola Valdez
   .column.has-background-blue.is-home-right-column
     .lang-choser.is-hidden-touch
       %a.lang.is-active{:href => "/es"} es
@@ -13,19 +10,19 @@
 
     %h1#hi= t("hello")
     %p
-      -# %img{:alt => "Hey it's me!", :src => "pao.jpg"}
       =image_tag("pao.jpg", alt: "Paola Valdez")
     %p= t("main_description")
     %p= t("description")
-    %p Creo que si, que has perdido la cabeza, estas completamente loco. Pero te diré un secreto: las mejores personas lo estan.
     %p
-      Read more
-      = succeed "," do
-        %a{:href => "/about/"} about me
+      = t("read_more")
+
+      = succeed "" do
+        %a{:href => "https://www.linkedin.com/in/paolavaldez/", target: '_blank'}= t("about_me")
+      = t("or")
       = succeed "." do
-        %a{:href => "/projects/"} my projects
+        %a{:href => "https://www.linkedin.com/in/paolavaldez/", target: '_blank'}= t("my_projects")
     %p
-      I’m available for freelancing, feel free to
+      =t('freelance')
       = succeed "!" do
-        %a{:href => "/about/#contact"} contact me
+        %a{:href => "#"}= t("contact_me")
   = render partial: "footer"
