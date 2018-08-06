@@ -9,5 +9,8 @@
             %a{:href => "tel:+525518797136"} (55) 1879 7136
         .siret.column
           %p
-            %strong= t("email")
-          %p= t("email_address")
+            %strong E-mail
+          - if I18n.locale == :es
+            %a{:href => "mailto:hola@paolavaldez.com"}= t("email_address")
+          - else
+            %a{:href => "mailto:hello@paolavaldez.com"}= t("email_address")

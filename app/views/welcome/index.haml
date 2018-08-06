@@ -5,9 +5,6 @@
     .lang-choser.is-hidden-touch
       %a.lang.is-active{:href => "/es"} es
       %a.lang{:href => "/en"} en
-
-
-
     %h1#hi= t("hello")
     %p
       =image_tag("pao.jpg", alt: "Paola Valdez")
@@ -15,7 +12,6 @@
     %p= t("description")
     %p
       = t("read_more")
-
       = succeed "" do
         %a{:href => "https://www.linkedin.com/in/paolavaldez/", target: '_blank'}= t("about_me")
       = t("or")
