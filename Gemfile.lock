@@ -40,6 +40,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    animate-rails (1.0.10)
+      rails
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (8.0.0)
@@ -412,6 +414,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails
   awesome_print
   better_errors
   binding_of_caller (~> 0.7.2)

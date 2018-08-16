@@ -15,6 +15,7 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 # USe bulma.io as framework
 gem 'bulma-rails', '~> 0.7.1'
+gem "animate-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
