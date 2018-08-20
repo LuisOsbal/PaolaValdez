@@ -38,6 +38,8 @@ gem 'mail_form'
 # components to create your forms.
 gem 'simple_form'
 
+gem 'devise'
+
 group :development, :test do
   gem 'awesome_print', require: 'ap'
   gem 'better_errors'
