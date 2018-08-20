@@ -1,6 +1,9 @@
 .column.is-half.nav-home
   %nav.navbar{"aria-label" => "main navigation"}
     .navbar-brand
+      - if controller_name != "welcome"
+        %a.navbar-item{:href => "/"}
+          =image_tag("logo-paola-valdez.png", class: 'logo-brand', alt: "Paola Valdez")
       %button.button.navbar-burger{"data-target" => "navMenu"}
         %span
         %span
