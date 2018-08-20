@@ -1,0 +1,26 @@
+%section.hero
+  .hero-body
+    .container.has-text-centered
+      .column.is-4.is-offset-4
+        .box
+          %figure.avatar
+            =image_tag("logo-paola-valdez.png", class: 'logo-brand animated bounce flip', alt: "Paola Valdez")
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            .field
+              .control
+                = f.label :email
+                = f.email_field :email, placeholder: "Your email", autocomplete: "email", :class => "input input is-medium"
+            .field
+              .control
+                = f.label :password
+                = f.password_field :password, placeholder: "Your password", autocomplete: "off", :class => "input input is-medium"
+            - if devise_mapping.rememberable?
+              .field
+                = f.check_box :remember_me
+                = f.label :remember_me, :class => "checkbox"
+            .actions
+              = f.submit "Log in", :class => "button button is-block is-principal-button is-fullwidth"
+        %p.has-text-grey
+          %a{:href => new_user_registration_path } Sign Up
+          %a{:href => new_user_password_path } Forgot Password
+          %a{:href => "../"} Need Help?
