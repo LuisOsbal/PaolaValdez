@@ -1,0 +1,10 @@
+/* TEAM */
+	Author: Paola Valdez
+	Contact: hola[at]paolavaldez.com
+	Twitter: Pao_olizzz1
+
+/* SITE */
+	Last update: 20/08/2018
+	Standards: HTML5, Sass, Ruby on Rails
+	Components: jQuery
+	Software: Atom
