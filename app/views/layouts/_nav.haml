@@ -3,21 +3,18 @@
     .navbar-brand
       - if controller_name != "welcome"
         %a.navbar-item{:href => "/"}
-          =image_tag("logo-paola-valdez.png", class: 'logo-brand', alt: "Paola Valdez")
-      %button.button.navbar-burger{"data-target" => "navMenu"}
-        %span
-        %span
+          =image_tag("luisosnet-logo.png", class: 'logo-brand', alt: "Luis Osnet")
         %span
     .navbar-menu
       .navbar-start
-        %a.navbar-item.is-active{:href => root_path}= t("home")
+        %a.navbar-item.is-active{:href => "/"}= t("home")
         %a.navbar-item{:href => abouts_path}= t("about")
         %a.navbar-item{:href => projects_path}= t("projects")
         %a.navbar-item{:href => articles_path}= t("articles")
         %a.navbar-item{:href => contacts_path}= t("contact")
     #navMenu.navbar-menu.is-hidden-desktop
       %span
-        %a.navbar-item.is-active{:href => "root_path"}= t("home")
+        %a.navbar-item.is-active{:href => "/"}= t("home")
       %span
         %a.navbar-item{:href => abouts_path}= t("about")
       %span

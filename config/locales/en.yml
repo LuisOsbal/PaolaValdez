@@ -13,10 +13,9 @@ en:
   freelance: "I’m available for freelancing, feel free to"
   email: "Email"
   email_address: "hello@paolavaldez.com"
-  # navbar
-  menu:
-    home: "Home"
-    about: "About"
-    projects: "Projects"
-    articles: "Blog"
-    contact: "Contact"
+  # menu
+  home: "Home"
+  about: "About"
+  projects: "Projects"
+  articles: "Blog"
+  contact: "Contact"
